@@ -1,0 +1,38 @@
+<?screenbuiled-stylesheet /css/Styles.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:controller="client.controller.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
+
+    <HBox fx:id="upperPanel" visible="true" managed="true">
+        <TextField HBox.hgrow="ALWAYS" promptText="Логин" fx:id="loginField"/>
+        <PasswordField promptText="Пароль" fx:id="passwordField" onAction="#tryToAuth"/>
+        <Button text="Авторизоваться" onAction="#tryToAuth"/>
+        <Button text="Зарегистрироваться" onAction="#activeRegPanel"/>
+    </HBox>
+
+    <HBox fx:id="regPanel" visible="false" managed="false">
+        <TextField HBox.hgrow="ALWAYS" promptText="Ник" fx:id="regNicknameField"/>
+        <TextField HBox.hgrow="ALWAYS" promptText="Логин" fx:id="regLoginField"/>
+        <PasswordField promptText="Пароль" fx:id="regPasswordField"/>
+        <PasswordField promptText="Подтвердите пароль" fx:id="regCheckPasswordField"/>
+        <Button text="Зарегистрироваться" onAction="#regUser"/>
+        <Button text="Авторизоваться" onAction="#disableRegPanel"/>
+
+    </HBox>
+
+    <HBox VBox.vgrow="ALWAYS">
+        <VBox HBox.hgrow="ALWAYS">
+            <TextArea fx:id="textArea" editable="false" VBox.vgrow="ALWAYS"/>
+            <HBox fx:id="bottomPanel" managed="false" visible="false">
+                <TextField fx:id="textField" promptText="Введите сообщение..." onAction="#sendMsg" HBox.hgrow="ALWAYS"/>
+                <Button text="Send" onAction="#sendMsg"/>
+                <ComboBox fx:id="comboBox"/>
+            </HBox>
+        </VBox>
+        <ListView fx:id="clientsList" prefWidth="200"/>
+    </HBox>
+</VBox>
+
+
+

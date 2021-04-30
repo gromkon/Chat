@@ -1,0 +1,36 @@
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="575.0" prefWidth="1025.0"
+            style="-fx-background-color: #4eccda;"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller">
+    <children>
+        <AnchorPane layoutX="64.0" layoutY="338.0"
+                    prefHeight="535.0" prefWidth="976.0"
+                    style="-fx-background-color: #b3eef5;"
+                    AnchorPane.bottomAnchor="24.0"
+                    AnchorPane.leftAnchor="24.0"
+                    AnchorPane.rightAnchor="24.0">
+            <children>
+                <AnchorPane layoutX="14.0" layoutY="14.0"
+                            prefHeight="504.0" prefWidth="176.0"
+                            style="-fx-background-color: #d4f8fc;">
+                    <children>
+                        <Button layoutX="16.0" layoutY="76.0"...>
+                        <Button layoutX="16.0" layoutY="129.0"...>
+                        <Button layoutX="16.0" layoutY="229.0"...>
+                        <Button layoutX="16.0" layoutY="283.0"...>
+                        <Button layoutX="16.0" layoutY="453.0"...>
+                        <Label layoutX="65.0" layoutY="1.0"...>
+                        <Button layoutX="16.0" layoutY="334.0"...>
+                        <Label layoutX="16.0" layoutY="39.0"...>
+                        <Label layoutX="17.0" layoutY="192.0"...>
+                    </children>
+                </AnchorPane>
+                <TextArea fx:id="textArea" layoutX="211.0"...>
+                <TextField fx:id="text" layoutX="211.0"...>
+                <Button layoutX="815.0" layoutY="467.0"...>
+            </children></AnchorPane>
+    </children>
+</AnchorPane>
